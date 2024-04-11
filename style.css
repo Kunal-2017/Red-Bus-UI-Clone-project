@@ -1,0 +1,769 @@
+/* CSS Reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box;
+    outline: 0;
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+  overflow-x: hidden;
+}
+/* container */
+.container{
+    
+    /* padding: 20px 80px; */
+}
+/* header */
+header{
+    display: flex;
+    padding: 20px;
+    position: sticky;
+    top: 0px;
+    align-items: center;
+    z-index: 1000;
+    background-color: #FFFFFF;
+    box-sizing: border-box;
+
+}
+/*header left-container */
+header .left-container{
+    width: 70%;
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    /* margin-top: 20px; */
+    
+    
+}
+/* logo */
+header .left-container .logo{
+    margin-right: 150px;
+    margin-left: 100px;
+}
+/* nav */
+header nav{
+    display:flex;
+    justify-content:space-between;
+    margin-right: 200px;
+}
+/* nav booking scetion logo */
+header nav .booking-section{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+    border-radius: 8px;
+    text-align: center;
+    
+}
+header nav .booking-section.rb-bg-red{
+    background-color: #ff0000;
+}
+header nav .booking-section a img{
+    filter: grayscale(100%);
+    filter: brightness(15%);
+}
+header nav .booking-section:hover{
+    background-color: #f5efef;
+    
+}
+header nav .booking-section:hover img{
+    filter: grayscale(0%);
+    filter: brightness(100%);
+}
+
+
+header nav .booking-section p{
+    
+    color: #4a4a4a;
+    font-size: 14px;
+   
+}
+
+
+/*  header right container */
+header .right-container{
+    width: 30%;
+    display:flex;
+    /* justify-content:space-between; */
+    align-items: center;
+    margin-left: 200px;
+    box-sizing: border-box;
+    
+    
+}
+/* help section */
+header .right-container .help{
+    padding:8px 12px ;
+    border-radius: 8px;
+}
+header .right-container .help:hover{
+    background-color: #f5efef;
+}
+header .right-container .help span{
+    color: #4a4a4a;
+    font-size: 14px;
+    margin-left: 5px;
+}
+header .right-container .help a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+.fa-regular {
+    margin-left: 50px;
+    margin-right: 5px;
+}
+/* account section */
+header .right-container .account{
+    display: flex;
+    align-items: center;
+    position: relative;
+    
+}
+header .right-container .account a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+/* account menu section */
+header .right-container .account .menu{
+    display: none;
+    width:200px;
+    height:300px;
+    border: 1px solid whitesmoke;
+    padding: 10px 20px 20px 10px;
+    border-radius: 15px;
+    background-color: #ffffff;
+
+}
+header .right-container .account .menu ul{
+    list-style-type: none;
+}
+header .right-container .account .menu ul li{
+    
+    margin-top: 25px;
+}
+header .right-container .account .menu ul li a{
+    text-decoration: none;
+    color: #4a4a4a;
+}
+/* hovering on menu section */
+header .right-container .account:hover .menu{
+    display: block;
+    position: absolute;
+    top: 30px;
+    left: 90px;
+    z-index: 100;
+
+}
+/* .fa-solid.fa-angle-down{
+   align-self: flex-end;
+} */
+/* main  poster*/
+main .poster{
+    background-image: url(./assets/HeroImage.png);
+    background-position: center;
+    background-size: cover;
+    height: 520px;
+}
+/* heading section */
+main .poster h1{
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+}
+/* Travelling details div section */
+main .poster .travell-details{
+    display: flex;
+    align-items: center;
+    width: 65%;
+    margin:20px auto ;
+    height: 110px;
+    border-radius: 20px;
+    padding: 10px 0px 10px 20px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    /* overflow: auto; */
+}
+main .poster .travell-details .details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-right: 1px solid red; */
+    height: 110px;
+    padding-right: 50px;
+    font-weight: 500;
+   
+}
+main .poster .travell-details .details .margin-left
+{
+    margin-left: 10px;
+}
+/* input scetion */
+main .poster .travell-details .details input{
+    border: none;
+    
+}
+
+/* swapping arrow */
+.swaping-arrow{
+    margin-left: -25px;
+}
+input[type="date"]
+{
+    width: 100px;
+}
+/* Search buses button */
+main .poster .travell-details .search{
+    background-color: #ff0000;
+    height: 110px;
+    /* text-align: center; */
+    border-radius: 0px 10px 10px 0px;
+    padding-right: 30px;
+    box-sizing: border-box;
+    /* width: fit-content; */
+}
+
+main .poster .travell-details .search a{
+   display: inline-block;
+    text-decoration: none;
+    text-align: center;
+    color: #ffffff;
+    font-size: 20px;
+    padding-top: 30px;
+    font-weight: bold;
+    
+    padding-left: 20px;
+    
+    
+}
+/* Sliding section */
+section .wrapper{
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 300px;
+    margin-top:-60px;
+    margin-left: 150px;
+    background-color: white;
+    border-radius: 20px;
+    border: 1px solid grey;
+    padding: 10px;
+    /* overflow-x: scroll;
+    overflow-y: hidden; */
+   
+    /* position: absolute; */
+    /* z-index: 10; */
+
+}
+section .wrapper p{
+    margin: 10px;
+    font-size: x-large;
+    font-weight: 400;
+}
+section .wrapper .slider{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+section .wrapper .slider .box{
+    width: 400px;
+    height:220px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+section .wrapper .slider .box .left{
+    height: 30%;
+    box-sizing: border-box;
+   
+}
+section .wrapper .slider .box .left img{
+    border-radius: 50%;
+    margin-top: 30px;
+    margin-right:10px;
+    margin-bottom: 30px;
+    margin-left: 10px;
+}
+section .wrapper .slider .box button{
+    background-color: lightslategray;
+    border-radius: 8px;
+    margin-top: 8px;
+    margin-bottom: 5px;
+    padding: 3px 6px 3px 6px;
+    border:1px dotted #4a4a4a;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+section .wrapper .slider .box h3{
+    color: white;
+    font-size: medium;
+    margin: 10px 8px 8px 0px ;
+}
+section .wrapper .slider .box span{
+    color: white;
+}
+section .wrapper .slider .box .right .bottom-right{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    gap: 15px;
+    margin-bottom: 10px;
+}
+section .wrapper .slider .slide1{
+    background-image: linear-gradient(to left, rgb(23, 23, 87),rgb(66, 42, 185));
+}
+section .wrapper .slider .slide2{
+    background-image: linear-gradient(to right, rgb(59, 81, 113),rgb(65, 242, 177));
+}
+section .wrapper .slider .slide3{
+background-image: linear-gradient(to right,rgb(81, 36, 36),rgb(183, 33, 33));
+}
+section .wrapper .slider .slide4{
+    background-image: linear-gradient(to right, rgb(126, 175, 126),rgb(65, 242, 177));
+}
+section .wrapper .slider .slide5{
+background-image: linear-gradient(to right, rgb(125, 167, 183),rgb(29, 174, 232));
+}
+section .wrapper .slider .slide6{
+    background-image: linear-gradient(to right, rgb(170, 142, 89),rgb(228, 159, 32));
+}
+section .wrapper .slider .slide7{
+    background-image: linear-gradient(to right,rgb(207, 96, 114),rgb(206, 65, 89));
+}
+section .wrapper .slider .slide8{
+background-image: linear-gradient(to right,rgb(134, 72, 134),rgb(233, 45, 233));
+}
+section .wrapper .slider .slide8 .left img{
+    width: 80px;
+    height: 80px;
+}
+/* dhoni banner section img */
+section .banner img{
+    width: 85%;
+    margin-top: 50px;
+    /* margin-bottom: 10px; */
+    margin-left: 150px;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+}
+/* Rental section */
+.rental-section{
+    /* position: relative; */
+    margin: 100px auto;
+    width: 85%;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+
+    /* background-color: #ff0000; */
+
+}
+.rental-section .left {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+}
+.rental-section> .left p {
+    font-size: xx-large;
+}
+.rental-section .left .left-bus-train-container {
+    
+    width:70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.rental-section .left .left-bus-train-container .bus-ryde-img-text {
+    width:55%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.rental-section .left .left-bus-train-container .train-ryde-img-text {
+    width:40%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .rental-section .right-car-bus-img{
+    display: none;
+    position: absolute;
+  
+} */
+
+.rental-section> .left .span-text {
+    margin-top: 20px;
+}
+.rental-section .left .vehicle-rental {
+   margin: 20px 0px;
+}
+.rental-section .left .vehicle-rental .Outstaions,.Hourly-Rental,.Airport-Transfers {
+    width: 42%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.rental-section .left .vehicle-rental .bookCab {
+    width: 45%;
+    margin-top: 15px;
+    
+    
+}
+.rental-section .left .vehicle-rental .bookCab button {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f74343;
+    color: #ffffff;
+    font-size: larger;
+    padding: 1px;
+    border-radius: 10px;
+    border: 1px solid #a49e9e;
+}
+/*  Rental scetion end*/
+
+/* enjoy app section start*/
+
+section .enjoyTheApp {
+
+    margin: 100px auto;
+    width: 85%;
+    background-color: #c65b5a;
+    border-radius: 2px;
+    padding:10px;
+    border-radius: 20px;
+    
+}
+section .enjoyTheApp .enjoyHeading h1 {
+    color: #ffffff;
+    padding: 2px;
+    margin: 2px;
+}
+section .enjoyTheApp .allDetails {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+section .enjoyTheApp .allDetails .rating {
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-left: 20px;
+}
+section .enjoyTheApp .allDetails .rating .store {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+section .enjoyTheApp .allDetails .rating .playstoreRating h1,p,h5 {
+    line-height: 30px;
+}
+section .enjoyTheApp .verticalLine {
+    width : 1px;
+    height : 100px;
+    background-color: #c1c1c1;
+
+}
+section .enjoyTheApp .allDetails .scan h4 {
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+section .enjoyTheApp .allDetails .playstore h4 {
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+/* enjoy app section end*/
+/* partner section */
+.partnerWith {
+    width: 85%;
+    margin: 100px auto;
+   
+}
+.partnerWith>p {
+    font-size: xx-large;
+    margin-bottom: 20px;
+}
+.partnerWith .rtc25 {
+    display: flex;
+    justify-content: space-between;
+}
+.partnerWith .rtc25 p {
+    font-size: larger;
+    font-weight: 500;
+}
+.partnerWith .rtc25 button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: #ffffff;
+    border: 1px solid rgb(146, 146, 148);
+}
+.partnerWith .stateRtc {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.partnerWith .stateRtc .rtc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.partnerWith .stateRtc .rtc p {
+   margin-top: 20px;
+}
+.partnerWith .stateRtc .rtc img {
+    width: 100px;
+    height: 100px;
+}
+/* private operator section */
+.redBusOperator {
+    width: 85%;
+    margin: 100px auto;
+}
+.redBusOperator .privateParawithButton {
+    display: flex;
+    justify-content: space-between;
+}
+.redBusOperator .privateParawithButton button {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: large;
+    background-color: #ffffff;
+    border: 1px solid rgb(146, 146, 148);
+}
+.redBusOperator .travells {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 50px;
+}
+.redBusOperator .travells div p {
+    line-height: 60px;
+}
+/* presence section */
+.globalPresence {
+    width: 85%;
+    margin: 100px 170px;
+}
+.globalPresence .flag {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+    
+}
+.globalPresence .flag div img {
+    width: 90%;
+}
+.bookBus {
+    width: 85%;
+    margin: 100px;
+}
+.bookBus #local {
+    display: none;
+}
+.bookBus .readMore :hover {
+    display: block;
+}
+.redBusDeals {
+    width: 85%;
+    margin: 100px;
+}
+/* unblock section */
+.unblock {
+    width: 85%;
+    margin: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    border: 1px solid gainsboro;
+    border-radius: 20px;
+    box-sizing: border-box;
+
+}
+.unblock .left {
+    width:60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.unblock .left .redBusLogo img {
+    width: 60%;
+}
+.unblock .left .unbeatableText .textredColor {
+    color: #f90f0f;
+    font-size: 20px;
+}
+
+
+.unblock .right {
+    width:30%;
+    display: flex;
+    justify-content: end;
+}
+.unblock .right .bookNowbutton button {
+    padding: 15px 30px;
+    background-color: #d84e55;
+   border: 1px solid white;
+    border-radius: 10px;
+}
+.unblock .right .bookNowbutton button a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 600;
+}
+/* body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+} */
+/* accordion faq section */
+.accordion {
+    width: 85%;
+    margin: auto;
+}
+.accordion label {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 70px;
+    padding: 20px 80px;
+    border-radius: 10px ;
+}
+
+.accordion-checkbox {
+    display: none;
+}
+
+.accordion-header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    cursor: pointer;
+    display: block;
+    margin: 10px;
+    border: 1px solid rgb(227, 225, 225);
+    
+}
+
+
+.accordion-content {
+    padding: 10px;
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f3f4f9;
+}
+
+.accordion-checkbox:checked + .accordion-header + .accordion-content {
+    display: block;
+}
+.popular {
+    width : 100%;
+    background-color: #f7f7f7;
+}
+.popular-checkbox {
+    display: none;
+}
+.popular-header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px;
+    cursor: pointer;
+    display: block;
+    margin: 10px;
+    border: 1px solid rgb(227, 225, 225);
+    padding-left: 200px;
+    
+}
+.popular-content {
+    padding: 10px;
+    display: none;
+    border: 1px solid #ccc;
+    border-top: none;
+    background-color: #f3f4f9;
+}
+.popular-checkbox:checked + .popular-header + .popular-content {
+    display: block;
+}
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background-color: #f7f7f7;
+    padding: 100px;
+    /* align-items: start; */
+}
+footer div {
+    width: 15%;
+}
+footer div ul {
+    list-style-type: none;
+}
+footer div ul li {
+    line-height: 40px;
+}
+.link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+    /* border: 1px solid gray; */
+    background-color: #f7f7f7;
+    align-items: center;
+}
+.link p {
+  width: 60%;
+}
+.link .icon {
+    width: 10%;
+  }
+  .link a{
+    color: #000000;
+    text-decoration: none;
+  }
+.link .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.link .icon .fa-brands{
+    font-size: 30px;
+}
+
+
+
